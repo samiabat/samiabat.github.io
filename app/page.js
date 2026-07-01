@@ -23,7 +23,6 @@ export default function HomePage() {
     <div className="page-shell">
       <section className="hero">
         <MotionSection className="hero-copy">
-          <p className="section-kicker">Landing Page</p>
           <h1>Samuel Abatneh</h1>
           <p className="hero-role-line">{heroRoles.join(" • ")}</p>
           <p className="hero-copy__text">
