@@ -15,7 +15,6 @@ import {
   resumeLinks,
   statHighlights,
   techCategories,
-  youtubeHighlights,
 } from "../lib/site-data";
 
 export default function HomePage() {
@@ -243,41 +242,6 @@ export default function HomePage() {
               </ul>
             </article>
           ))}
-        </div>
-      </MotionSection>
-
-      <MotionSection className="section split-section" id="youtube">
-        <div className="section-heading">
-          <p className="section-kicker">YouTube</p>
-          <h2>Visual engineering and creator-ready storytelling.</h2>
-        </div>
-        <div className="glass-panel">
-          <p className="section-copy">
-            This section is designed to expand into auto-synced YouTube content.
-            Once you share your channel ID or preferred video URLs, we can wire
-            in subscriber count, views, most popular videos, and latest uploads.
-          </p>
-          <div className="category-grid">
-            <article className="category-card">
-              <h3>Subscriber Count</h3>
-              <p className="section-copy">Ready for live YouTube API sync.</p>
-            </article>
-            <article className="category-card">
-              <h3>Videos</h3>
-              <p className="section-copy">Prepared for automatic latest upload cards.</p>
-            </article>
-            <article className="category-card">
-              <h3>Views</h3>
-              <p className="section-copy">Designed for channel analytics highlights.</p>
-            </article>
-          </div>
-          <div className="chip-group">
-            {youtubeHighlights.map((item) => (
-              <span key={item} className="chip">
-                {item}
-              </span>
-            ))}
-          </div>
         </div>
       </MotionSection>
 
