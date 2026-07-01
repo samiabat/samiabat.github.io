@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AnimatedCounter } from "../components/animated-counter";
+import { ContactLinkList } from "../components/contact-link-list";
 import { GitHubSnapshot } from "../components/github-snapshot";
 import { HeroVisual } from "../components/hero-visual";
 import { MotionSection } from "../components/motion-section";
@@ -273,14 +274,7 @@ export default function HomePage() {
           <h2>Open to AI engineering, backend, and research-driven builds.</h2>
         </div>
         <div className="contact-panel">
-          <div className="contact-list">
-            {contactLinks.map((link) => (
-              <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
-                <span>{link.label}</span>
-                <strong>{link.text}</strong>
-              </a>
-            ))}
-          </div>
+          <ContactLinkList links={contactLinks} />
           <div className="resume-buttons">
             {resumeLinks.map((resume) => (
               <a key={resume.label} className="button button--secondary" href={resume.href}>

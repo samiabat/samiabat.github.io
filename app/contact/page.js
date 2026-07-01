@@ -1,3 +1,4 @@
+import { ContactLinkList } from "../../components/contact-link-list";
 import { MotionSection } from "../../components/motion-section";
 import { contactLinks, resumeLinks } from "../../lib/site-data";
 
@@ -18,14 +19,7 @@ export default function ContactPage() {
           <h2>Reach out directly</h2>
         </div>
         <div className="contact-panel">
-          <div className="contact-list">
-            {contactLinks.map((link) => (
-              <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
-                <span>{link.label}</span>
-                <strong>{link.text}</strong>
-              </a>
-            ))}
-          </div>
+          <ContactLinkList links={contactLinks} />
           <div className="resume-buttons">
             {resumeLinks.map((resume) => (
               <a key={resume.label} className="button button--secondary" href={resume.href}>
