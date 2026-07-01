@@ -1,11 +1,22 @@
 # samiabat.github.io
 
-Personal portfolio site for GitHub Pages.
+Samuel Abatneh's portfolio built with Next.js and exported as a static site for GitHub Pages.
 
-## Run locally
+## Development
 
-Open `index.html` in a browser.
+```bash
+npm install
+npm run dev
+```
 
-## Deploy
+## Production build
 
-This repository is set up to publish from the `main` branch on GitHub Pages.
+```bash
+npm run build
+```
+
+The static output is generated in `out/`.
+
+## Deployment
+
+This repo includes a GitHub Actions workflow that builds the Next.js app and deploys it to GitHub Pages.
