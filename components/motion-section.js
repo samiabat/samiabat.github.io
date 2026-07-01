@@ -4,18 +4,22 @@ import { motion, useReducedMotion } from "framer-motion";
 
 export function MotionSection({ children, className = "", delay = 0 }) {
   const prefersReducedMotion = useReducedMotion();
-
-  if (prefersReducedMotion) {
-    return <div className={className}>{children}</div>;
-  }
+  const shouldAnimate = !prefersReducedMotion;
 
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y: 28 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.65, ease: "easeOut", delay }}
+      initial={false}
+      whileInView={
+        shouldAnimate
+          ? {
+              opacity: [0.92, 1],
+              y: [20, 0],
+            }
+          : undefined
+      }
+      viewport={{ once: true, amount: 0.12 }}
+      transition={{ duration: 0.45, ease: "easeOut", delay }}
     >
       {children}
     </motion.div>
