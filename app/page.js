@@ -16,7 +16,7 @@ export default function HomePage() {
           <p className="section-kicker">AI engineer · Addis Ababa, Ethiopia</p>
           <h1>Samuel Abatneh</h1>
           <p className="hero-copy__text hero-copy__text--lead">
-            I build reliable AI products and backend systems—from retrieval and
+            I build reliable AI products and backend systems, from retrieval and
             inference pipelines to APIs that hold up under real-world load.
           </p>
           <div className="hero-actions">
@@ -24,20 +24,26 @@ export default function HomePage() {
               See selected work
             </Link>
             <a className="text-link" href={resumeLinks[0].href} target="_blank" rel="noreferrer">
-              Read my résumé <span aria-hidden="true">↗</span>
+              Read my Resume <span aria-hidden="true">-&gt;</span>
             </a>
             <a className="text-link" href="mailto:samuel.neuralnet@gmail.com">
-              Email me <span aria-hidden="true">↗</span>
+              Email me <span aria-hidden="true">-&gt;</span>
             </a>
           </div>
         </MotionSection>
         <MotionSection className="hero-proof" delay={0.1}>
-          <p>Selected outcomes</p>
+          <div className="hero-proof__heading">
+            <p>Independent work</p>
+            <a href="https://www.upwork.com/freelancers/~01896db10787fd9fd1" target="_blank" rel="noreferrer" aria-label="View Samuel Abatneh's Upwork profile">Upwork -&gt;</a>
+          </div>
           <dl>
-            <div><dt>10,000+</dt><dd>concurrent users tested</dd></div>
-            <div><dt>300 ms</dt><dd>latency after optimization</dd></div>
-            <div><dt>Top Rated Plus</dt><dd>independent engineering work</dd></div>
+            <div><dt>$30K+</dt><dd>total earnings</dd></div>
+            <div><dt>17</dt><dd>jobs completed</dd></div>
+            <div><dt>3,596</dt><dd>hours worked</dd></div>
           </dl>
+          <a className="upwork-status" href="https://www.upwork.com/freelancers/~01896db10787fd9fd1" target="_blank" rel="noreferrer">
+            <span aria-hidden="true">●</span> Top Rated Plus on Upwork
+          </a>
         </MotionSection>
       </section>
 
@@ -54,7 +60,7 @@ export default function HomePage() {
         <div className="section-heading section-heading--row">
           <div>
             <p className="section-kicker">Selected work</p>
-            <h2>Products and systems I’ve built.</h2>
+            <h2>Products and systems I've built.</h2>
           </div>
           <p>Case studies spanning AI search, agents, learning tools, and real-time inference.</p>
         </div>
@@ -72,11 +78,6 @@ export default function HomePage() {
                 <ul>
                   {project.architecture.slice(0, 3).map((item) => <li key={item}>{item}</li>)}
                 </ul>
-                {project.githubUrl && (
-                  <a className="text-link" href={project.githubUrl} target="_blank" rel="noreferrer">
-                    View source <span aria-hidden="true">↗</span>
-                  </a>
-                )}
               </div>
             </article>
           ))}
@@ -97,14 +98,38 @@ export default function HomePage() {
             </article>
           ))}
         </div>
-        <Link className="text-link" href="/experience">View full experience →</Link>
+        <Link className="text-link" href="/experience">View full experience -&gt;</Link>
+      </MotionSection>
+
+      <MotionSection className="competitive-section">
+        <div className="competitive-section__intro">
+          <p className="section-kicker">Competitive programming</p>
+          <h2>Strong foundations in algorithms and problem solving.</h2>
+          <p>
+            I have solved more than 1,000 algorithmic problems and taught
+            competitive programming, turning that practice into clearer
+            reasoning about performance, edge cases, and system design.
+          </p>
+        </div>
+        <div className="competitive-profiles">
+          <a href="https://leetcode.com/u/Samuelabatneh/" target="_blank" rel="noreferrer">
+            <span>LeetCode</span>
+            <strong>Samuelabatneh</strong>
+            <small>View profile -&gt;</small>
+          </a>
+          <a href="https://codeforces.com/profile/SBAGE" target="_blank" rel="noreferrer">
+            <span>Codeforces</span>
+            <strong>SBAGE</strong>
+            <small>View profile -&gt;</small>
+          </a>
+        </div>
       </MotionSection>
 
       <MotionSection className="contact-section" id="contact">
         <div>
           <p className="section-kicker">Contact</p>
           <h2>Have an ambitious AI or backend problem?</h2>
-          <p>I’m open to engineering roles, research collaborations, and focused product work.</p>
+          <p>I'm open to engineering roles, research collaborations, and focused product work.</p>
         </div>
         <div>
           <ContactLinkList links={contactLinks} />

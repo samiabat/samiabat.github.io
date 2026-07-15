@@ -15,7 +15,7 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <a className="header-resume" href="/resumes/samuel-abatneh-software-engineer.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
+        <a className="header-resume" href="/resumes/samuel-abatneh-software-engineer.pdf" target="_blank" rel="noreferrer">Resume -&gt;</a>
       </div>
     </header>
   );
