@@ -9,7 +9,7 @@ export default function BlogPage() {
     <div className="page-shell page-shell--inner">
       <MotionSection className="page-hero">
         <p className="section-kicker">Blog</p>
-        <h1>Coming soon.</h1>
+        <h1>Notes on AI, backend, and research.</h1>
         <p className="section-copy section-copy--large">
           This space is reserved for AI engineering breakdowns, backend case
           studies, research notes, and YouTube-connected writeups.

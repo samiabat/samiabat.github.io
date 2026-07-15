@@ -10,7 +10,7 @@ export default function ExperiencePage() {
     <div className="page-shell page-shell--inner">
       <MotionSection className="page-hero">
         <p className="section-kicker">Experience</p>
-        <h1>A timeline of research, mentorship, and high-impact delivery.</h1>
+        <h1>Experience across research, mentoring, and delivery.</h1>
       </MotionSection>
 
       <MotionSection className="section">

@@ -10,7 +10,7 @@ export default function ResearchPage() {
     <div className="page-shell page-shell--inner">
       <MotionSection className="page-hero">
         <p className="section-kicker">Research</p>
-        <h1>Applied AI research with clear real-world stakes.</h1>
+        <h1>Applied AI research with practical impact.</h1>
         <p className="section-copy section-copy--large">
           My undergraduate research focused on NLP-based hate speech and threat
           detection, with an emphasis on deployment potential, practical
@@ -39,7 +39,7 @@ export default function ResearchPage() {
       <MotionSection className="section">
         <div className="section-heading section-heading--full">
           <p className="section-kicker">Paper + Poster</p>
-          <h2>A dedicated space ready for publication assets.</h2>
+          <h2>Paper and poster materials.</h2>
         </div>
         <div className="category-grid">
           <article className="category-card">
@@ -62,7 +62,7 @@ export default function ResearchPage() {
       <MotionSection className="section">
         <div className="section-heading section-heading--full">
           <p className="section-kicker">Research Interests</p>
-          <h2>Future goals across ML, RL, systems, and cybersecurity.</h2>
+          <h2>Future work across ML, RL, systems, and cybersecurity.</h2>
         </div>
         <div className="chip-group">
           {researchAreas.map((area) => (

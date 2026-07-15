@@ -11,7 +11,7 @@ export default function AboutPage() {
     <div className="page-shell page-shell--inner">
       <MotionSection className="page-hero">
         <p className="section-kicker">About</p>
-        <h1>Building AI with systems thinking and production discipline.</h1>
+        <h1>Building AI systems with research and engineering in mind.</h1>
         <p className="section-copy section-copy--large">
           I&apos;m drawn to work that sits between research ambition and
           engineering rigor: LLM applications that need strong retrieval,
@@ -53,7 +53,7 @@ export default function AboutPage() {
       <MotionSection className="section">
         <div className="section-heading section-heading--full">
           <p className="section-kicker">Research Interests</p>
-          <h2>Where I want to keep going deeper.</h2>
+          <h2>Areas I want to keep exploring.</h2>
         </div>
         <div className="category-grid">
           {researchAreas.map((area) => (

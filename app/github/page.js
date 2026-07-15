@@ -10,7 +10,7 @@ export default function GitHubPage() {
     <div className="page-shell page-shell--inner">
       <MotionSection className="page-hero">
         <p className="section-kicker">GitHub</p>
-        <h1>Public repositories, current profile metrics, and active code.</h1>
+        <h1>Public code, profile activity, and recent repositories.</h1>
       </MotionSection>
 
       <MotionSection className="section">

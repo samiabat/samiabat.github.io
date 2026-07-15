@@ -6,7 +6,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="site-header__inner">
         <Link className="site-brand" href="/">
-          Samuel Abatneh
+          <span className="site-brand__name">Samuel Abatneh</span>
         </Link>
         <nav className="site-nav" aria-label="Primary">
           {navigation.map((item) => (
@@ -15,6 +15,7 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
+        <a className="header-resume" href="/resumes/samuel-abatneh-software-engineer.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
       </div>
     </header>
   );

@@ -6,11 +6,9 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="site-footer__inner">
         <div>
-          <p className="section-kicker">Built with React + Next.js</p>
-          <h3>Hosted on GitHub Pages</h3>
+          <h3>Samuel Abatneh</h3>
           <p className="section-copy">
-            Thoughtful AI systems, scalable backend infrastructure, and visual
-            engineering for real-world products.
+            AI engineer building useful, reliable systems.
           </p>
         </div>
 
@@ -28,7 +26,7 @@ export function SiteFooter() {
         </div>
 
         <div className="footer-meta">
-          <Link href="/">Home</Link>
+          <span>Addis Ababa, Ethiopia</span>
           <span>© 2026 Samuel Abatneh</span>
         </div>
       </div>

@@ -11,7 +11,7 @@ export default function ContactPage() {
     <div className="page-shell page-shell--inner">
       <MotionSection className="page-hero">
         <p className="section-kicker">Contact</p>
-        <h1>Let&apos;s build production AI systems that actually ship.</h1>
+        <h1>Get in touch.</h1>
       </MotionSection>
 
       <MotionSection className="section split-section">
