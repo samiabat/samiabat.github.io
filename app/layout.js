@@ -14,12 +14,28 @@ const fraunces = Fraunces({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://samiabat.github.io"),
   title: {
     default: "Samuel Abatneh | AI Engineer",
     template: "%s | Samuel Abatneh",
   },
   description:
     "Portfolio for Samuel Abatneh, an AI Engineer, Backend Engineer, and ML Researcher building production-ready AI systems and scalable infrastructure.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Samuel Abatneh | AI Engineer",
+    description:
+      "AI engineer building reliable AI products, backend systems, and applied machine learning solutions.",
+    url: "/",
+    siteName: "Samuel Abatneh",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
